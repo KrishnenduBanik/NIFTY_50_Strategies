@@ -1,4 +1,7 @@
 # NIFTY_50_Strategies
-ff;gls
-sdlf'e'
-sflje
+This project is a comprehensive backtesting system designed to evaluate and compare four distinct trading strategies applied to the Nifty 50 index from 2021 to 2025. The core objective is to determine which strategy would have yielded the best returns with the least risk over these five years. The four strategies tested are Buy & Hold, Mean Reversion, RSI-based trading, and Momentum investing.
+The Buy & Hold strategy is the simplest, involving purchasing all 50 stocks and holding them indefinitely without any changes, operating on the principle that long-term market participation outweighs short-term timing.
+Mean Reversion, in contrast, actively buys stocks that have fallen significantly below their historical average and sells those that have risen too far above it, based on the belief that prices tend to revert to their mean over time.
+The RSI strategy uses the Relative Strength Index, a technical indicator, to identify overbought conditions (RSI above 70) as selling opportunities and oversold conditions (RSI below 30) as buying signals, catering to those who rely on technical analysis. 
+Momentum strategy follows the trend by buying stocks that have shown strong recent performance and selling those that have weakened, capitalizing on the idea that existing trends are likely to continue.
+For each strategy, the program automatically downloads five years of historical stock price data, simulates daily portfolio management according to the specific rules, and calculates key performance metrics. These metrics include **total return**, **maximum drawdown** (the largest peak-to-trough decline, indicating potential emotional stress), **winrate** (number of successful trades), and **Sharpe ratio** (which assesses risk-adjusted returns). The system then generates a clear side-by-side comparison, showing which strategy delivered the highest returns, which experienced the smallest losses during market downturns, and how their risk profiles differed.
