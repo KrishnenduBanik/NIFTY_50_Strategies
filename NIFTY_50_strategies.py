@@ -3,7 +3,7 @@ import numpy as np
 import yfinance as yf
 
 # Fetch stock data
-def get_data(ticker='GRASIM.NS', start='2021-01-01'):
+def get_data(ticker='NIFTY_50_STOCK.NS', start='2021-01-01', end='17-11-2025):
     """Fetch stock data using yfinance"""
     data = yf.download(ticker, start=start, progress=False)
     return data
@@ -111,8 +111,8 @@ def main():
     print("=" * 70)
     
     # Get data
-    stock_data = get_data('GRASIM.NS', '2021-01-01')
-    print(f"✅ Data fetched: {len(stock_data)} rows from {stock_data.index[0].date()} to {stock_data.index[-1].date()}")
+    stock_data = get_data('GRASIM.NS', '2021-01-01', end='2025-11-17')
+    print(f"Data fetched: {len(stock_data)} rows from {stock_data.index[0].date()} to {stock_data.index[-1].date()}")
     
     # Define all strategies
     strategies = {
